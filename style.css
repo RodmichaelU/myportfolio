@@ -5,10 +5,11 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(230, 230, 230);
 }
 
 body{
-    font-famliy: sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 html{
@@ -31,6 +32,7 @@ a,
 nav, 
 .nav-links{
     display: flex;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav{
@@ -221,6 +223,10 @@ section {
 .icon{
     cursor: pointer;
     height: 2rem;
+}
+.icon2{
+    cursor: pointer;
+    height: 2.5rem;
 }
 
 .btn-container{
