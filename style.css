@@ -219,11 +219,13 @@ section {
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
+    height: 3rem;
 }
 
 .icon{
     cursor: pointer;
-    height: 2rem;
+    height: 1.95rem;
+    margin-top: 3px;
 }
 .icon2{
     cursor: pointer;
@@ -602,4 +604,8 @@ article:hover {
   
   .email-icon {
     height: 2.5rem;
+  }
+
+  .contact-icon{
+    height: 3rem;
   }
