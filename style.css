@@ -29,6 +29,13 @@ a,
 
 /* Navigation */
 
+#desktop-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust spacing as needed */
+    height: 17vh;
+}
 nav, 
 .nav-links{
     display: flex;
@@ -608,4 +615,11 @@ article:hover {
 
   .contact-icon{
     height: 3rem;
+  }
+
+  /*Footer*/
+
+  footer{
+    height: 15vh;
+    margin: 0 1rem;
   }
