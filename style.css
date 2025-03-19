@@ -636,3 +636,16 @@ article:hover {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+.nav-links {
+    font-family: 'Nunito', sans-serif; /* Change to any font you like */
+    font-size: 18px; /* Adjust size */
+    font-weight: bold; /* Make it bold if needed */
+    color: #333; /* Change text color */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from .nav-links */
+}
