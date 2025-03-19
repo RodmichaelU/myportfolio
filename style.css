@@ -316,14 +316,17 @@ section {
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
+    max-width: 1200px; /* Prevents excessive stretching */
+    margin: 0 auto; /* Ensures centering */
 }
 
 .about-info {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center; /* Ensures centering */
     margin-bottom: 20px;
     flex-wrap: wrap;
+    width: 100%; /* Ensures full-width alignment */
 }
 
 .about-card {
@@ -331,7 +334,8 @@ section {
     padding: 20px;
     border-radius: 12px;
     text-align: center;
-    width: 220px;
+    width: 320px; /* Increased width */
+    max-width: 400px; /* Ensures it doesn’t get too large */
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
@@ -340,6 +344,7 @@ section {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
+
 
 /* Image Styling */
 .about-pic-container {
@@ -362,7 +367,7 @@ section {
 
 /* Details Section */
 .about-details {
-    max-width: 500px;
+    max-width: 600px;
     text-align: left;
 }
 
@@ -379,7 +384,7 @@ section {
     padding: 20px;
     border-radius: 12px;
     text-align: center;
-    width: 200px;
+    width: 250px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -400,6 +405,7 @@ section {
     font-size: 16px;
     line-height: 1.6;
     color: #444;
+    text-align: center;
 }
 
 /* Arrow Icon */
