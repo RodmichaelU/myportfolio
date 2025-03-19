@@ -623,3 +623,16 @@ article:hover {
     height: 15vh;
     margin: 0 1rem;
   }
+
+
+/* Initial state: hidden and slightly translated */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Adjust to the same duration */
+}
+
+.fade-in-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
