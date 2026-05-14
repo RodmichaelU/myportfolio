@@ -4,357 +4,388 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodmichael Umapas</title>
+    <title>Rodmichael Umapas | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mdeia.css">
 </head>
 <body>
+
     <nav id="desktop-nav">
-    <div class="logo"></div>
-    <div>
-        <ul class = "nav-links">
-            <li><a href="#about"> About</a></li>
-            <li><a href="#experience"> Experience</a></li>
-            <li><a href="#projects"> Projects</a></li>
-            <li><a href="#contact"> Contact</a></li>
+        <div class="logo">RJ</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
     </nav>
+
     <nav id="hamburger-nav">
-      <div class="logo"></div>
-      <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-          <ul class="menu-links">
-              <li><a href="#about" onclick="toggleMenu()">About</a></li>
-              <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </ul>
-      </div>
-  </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profilepic2.jpeg" alt="RJ Profile Picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1"> Hello I'm</p>
-            <h1 class="title"> Rodmichael Umapas</h1>
-            <p class="section__text__p2"> Software Engineering Student</p>
-            <div class="btn-container">
-                <button class="btn btn-colour-2" onclick="window.open('./assets/resume3.pdf')"> View Resume
-                </button>
-                <button class="btn btn-colour-1" onclick="location.href='./#contact'""> Contact Info
-                </button>
+        <div class="logo">RJ</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
             </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My Likedin Profile"
-                class="icon2" onclick="location.href='https://www.linkedin.com/in/rodmichael-umapas/'">
-                <img src="./assets/github.png" alt="My GitHub"
-                class="icon" onclick="location.href='https://github.com/RodmichaelU'">
-            </div>
-        </div>
-    </section>
-    <section id="about" class="fade-in-section">
-        <p class="section-subtitle">Get to Know More</p>
-        <h1 class="section-title">About Me</h1>
-    
-        <div class="about-container">
-            <!-- Image Container -->
-            <div class="about-pic-container">
-                <img src="./assets/about.png" alt="Profile Picture" class="about-pic" />
-            </div>
-            <p class="about-text">
-              I'm Rodmichael Umapas, a Software Engineering Student at the University of Calgary. I am a motivated and detail-oriented individual with hands-on experience in data science, project management, and kitchen operations, eager to apply technical, analytical, and leadership skills in a professional setting. Proficient in machine learning, software development, and data analysis, with a strong foundation in Python, Java, C/C++, and full-stack development. Experienced in optimizing workflows, managing projects, and problem-solving in fast-paced environments. Passionate about continuous learning and seeking opportunities to grow, contribute, and gain industry experience to launch a successful career.
-            </p>
-            <!-- Details & Experience -->
-            <div class="about-details">
-                <div class="about-info">
-                    <div class="about-card">
-                        <img src="./assets/education.png" alt="Education Icon" class="icon">
-                        <h3>Software Engineering Student</h3>
-                        <p>University of Calgary</p>
-                        <p class="experience-desc">Pursuing coursework in software development, machine learning, and data management, focusing on programming, algorithms, and full-stack development.</p>
-                    </div>
-                    <div class="about-card">
-                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
-                        <h3>Project Manager Intern</h3>
-                        <p>TC Energy</p>
-                        <p class="experience-desc">Oversaw pipeline integrity projects, streamlined deliverables through app development, optimized resource planning, and mentored new hires while ensuring safety and efficiency.</p>
-                    </div>
-                </div>
-    
-                <div class="about-info">
-                    <div class="about-card">
-                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
-                        <h3>Data Scientist Intern</h3>
-                        <p>M2M Tech</p>
-                        <p class="experience-desc">Developed predictive models, optimized data analysis, and created visualizations to drive decision-making while enhancing model performance and collaborating on data solutions.</p>
-                    </div>
-                    <div class="about-card">
-                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
-                        <h3>Sous Chef</h3>
-                        <p>Earls Kitchen & Bar</p>
-                        <p class="experience-desc">Led kitchen operations, managing workflows, cost control, quality assurance, and team coordination to ensure efficiency and high culinary standards.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
-    </section>
-    <section id="experience" class="fade-in-section">
-        <p class="section-subtitle">Explore My</p>
-        <h1 class="section-title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Technical Skills</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Python</h3>
-                    <p>Proficient</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Java</h3>
-                    <p>Proficient</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>C/C++</h3>
-                    <p>Proficient</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                    <p>Proficient</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>AWS Services</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Web Development</h3>
-                    <p>Proficient</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Machine Learning</h3>
-                    <p>Proficient</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Relevant Courses</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Data Structures & Algorithms</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Machine Learning</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Software Testing & Reliability</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Full Stack Web Development</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Computer Architecture</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Software Development Principles</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3> Embedded Software and Hardware Systems</h3>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#projects'"
-        />
-      </section>
-    <section id="projects" class="fade-in-section">
-        <p class="section-subtitle">Browse My Recent</p>
-        <h1 class="section-title">Projects</h1>
-    <div class="projects-container">
-        <div class="project-card">
-            <img src="./assets/BBB.png" alt="BBB" class="project-image"/>
-            <h2>Sports Betting Simulation</h2>
-            <p></p>
-            <div class="project-links">
-                <button class="btn btn-colour-2" onclick="location.href='https://betbetbonanza.netlify.app'" class="btn">Demo</button>
-                <button class="btn btn-colour-1" onclick="location.href='https://github.com/zpelkey03/betbetbonanza'" class="btn">GitHub</button>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="./assets/flight.png" alt="Flight" class="project-image"/>
-            <h2>Flight Reservation App</h2>
-            <p></p>
-            <div class="project-links">
-                <button class="btn btn-colour-2" onclick="location.href='https://youtu.be/oa6mXv2vdnw?si=Qs3NsSgx9z3xkFos'" class="btn">Demo</button>
-                <button class="btn btn-colour-1" onclick="location.href='https://github.com/syrilj/Flight_Reservation_App?tab=readme-ov-file'" class="btn">GitHub</button>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="./assets/notes.png" alt="Notes" class="project-image"/>
-            <h2>React Note Taking Application</h2>
-            <p></p>
-            <div class="project-links">
-                <button class="btn btn-colour-2" onclick="location.href='https://astonishing-mermaid-aa6898.netlify.app'" class="btn">Demo</button>
-                <button class="btn btn-colour-1" onclick="location.href='https://github.com/RodmichaelU/lotion-1'" class="btn">GitHub</button>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="./assets/credentials.png" alt="Project 3" class="project-image"/>
-            <h2>Student Credentials Managment</h2>
-            <p></p>
-            <div class="project-links">
-                <button class="btn btn-colour-2" onclick="location.href='https://www.youtube.com/watch?v=AeSkhNEmCsU'" class="btn">Demo</button>
-                <button class="btn btn-colour-1" onclick="location.href='https://github.com/CaelanX/hack-the-change-2022'" class="btn">GitHub</button>
-            </div>
-        </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
-</section>
-<section id="contact" class="fade-in-section">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img
-          src="./assets/email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        />
-        <p><a href="mailto:examplemail@gmail.com">rjumapas@shaw.ca</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        />
-        <p><a href="https://www.linkedin.com/in/rodmichael-umapas/">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-<footer>
-    <nav id="desktop-nav">
-        <div class="nav-links-container">
-            <ul class = "nav-links">
-                <li><a href="#about"> About</a></li>
-                <li><a href="#experience"> Experience</a></li>
-                <li><a href="#projects"> Projects</a></li>
-                <li><a href="#contact"> Contact</a></li>
+            <ul class="menu-links">
+                <li><a href="#about"    onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills"   onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
             </ul>
         </div>
-        </nav>
-</footer>
-    
+    </nav>
+
+    <!-- ─── Hero ─── -->
+    <section id="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">Rodmichael<br>Umapas</h1>
+                <p class="hero-subtitle">
+                    <span id="typed-text"></span><span class="cursor">|</span>
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="window.open('./assets/resume3.pdf')">View Resume</button>
+                    <button class="btn btn-ghost"   onclick="location.href='#contact'">Contact Me</button>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/rodmichael-umapas/" target="_blank" class="social-btn">
+                        <img src="./assets/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/RodmichaelU" target="_blank" class="social-btn">
+                        <img src="./assets/github.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-img-wrap">
+                <div class="hero-img-ring"></div>
+                <img src="./assets/profilepic2.jpeg" alt="Rodmichael Umapas" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── About ─── -->
+    <section id="about">
+        <div class="section-inner">
+            <span class="section-label" data-animate="fade-up">About Me</span>
+            <h2 class="section-title"   data-animate="fade-up" data-delay="1">Who I Am</h2>
+            <div class="about-grid">
+                <div class="about-photo-wrap" data-animate="fade-right">
+                    <img src="./assets/about.png" alt="About" class="about-photo">
+                </div>
+                <div class="about-body">
+                    <p class="about-text" data-animate="fade-up" data-delay="1">
+                        Recently graduated Software Engineer from the <strong>University of Calgary</strong> (GPA 3.8 · Dean's List)
+                        with 3 internships across backend development, data science, and project management.
+                        Most recently built scalable backend systems, Python automation pipelines, and cloud-native
+                        data infrastructure at <strong>TC Energy</strong>. I bring full-stack range and real-world
+                        production experience from day one.
+                    </p>
+                    <div class="stat-row" data-animate="fade-up" data-delay="2">
+                        <div class="stat-item">
+                            <span class="stat-value">3.8</span>
+                            <span class="stat-name">GPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">3+</span>
+                            <span class="stat-name">Internships</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">10+</span>
+                            <span class="stat-name">Languages</span>
+                        </div>
+                    </div>
+                    <div class="exp-list">
+                        <div class="exp-item" data-animate="fade-up" data-delay="3">
+                            <span class="exp-icon">🎓</span>
+                            <div>
+                                <p class="exp-title">BSc Software Engineering · Class of 2025</p>
+                                <p class="exp-sub">University of Calgary · Dean's List · Schulich Leadership Scholar</p>
+                            </div>
+                        </div>
+                        <div class="exp-item" data-animate="fade-up" data-delay="4">
+                            <span class="exp-icon">💻</span>
+                            <div>
+                                <p class="exp-title">Software Developer Intern</p>
+                                <p class="exp-sub">TC Energy · backend systems, Python automation, AWS data pipelines</p>
+                            </div>
+                        </div>
+                        <div class="exp-item" data-animate="fade-up" data-delay="5">
+                            <span class="exp-icon">💼</span>
+                            <div>
+                                <p class="exp-title">Project Manager Intern</p>
+                                <p class="exp-sub">TC Energy · 40+ projects worth $100M+, end-to-end app development</p>
+                            </div>
+                        </div>
+                        <div class="exp-item" data-animate="fade-up" data-delay="6">
+                            <span class="exp-icon">📊</span>
+                            <div>
+                                <p class="exp-title">Data Scientist Intern</p>
+                                <p class="exp-sub">M2M Technology · ML models, ETL pipelines, data visualizations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Skills ─── -->
+    <section id="skills">
+        <div class="section-inner">
+            <span class="section-label" data-animate="fade-up">Skills</span>
+            <h2 class="section-title"   data-animate="fade-up" data-delay="1">What I Work With</h2>
+            <div class="skills-grid">
+                <div class="skill-group" data-animate="fade-up" data-delay="1">
+                    <h3>Languages</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">C/C++</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">R</span>
+                        <span class="tag">Swift</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-group" data-animate="fade-up" data-delay="2">
+                    <h3>Frameworks &amp; Libraries</h3>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Scikit-Learn</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">LightGBM</span>
+                        <span class="tag">Jest</span>
+                        <span class="tag">JUnit</span>
+                    </div>
+                </div>
+                <div class="skill-group" data-animate="fade-up" data-delay="3">
+                    <h3>Developer Tools</h3>
+                    <div class="tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Google Cloud</span>
+                        <span class="tag">Postman</span>
+                        <span class="tag">Power BI</span>
+                    </div>
+                </div>
+                <div class="skill-group" data-animate="fade-up" data-delay="4">
+                    <h3>Software Engineering</h3>
+                    <div class="tags">
+                        <span class="tag">OOP &amp; Design Patterns</span>
+                        <span class="tag">System Design</span>
+                        <span class="tag">REST API Design</span>
+                        <span class="tag">Microservices</span>
+                        <span class="tag">Agile / Scrum</span>
+                        <span class="tag">ETL Pipelines</span>
+                        <span class="tag">Unit Testing</span>
+                        <span class="tag">Integration Testing</span>
+                        <span class="tag">Code Reviews</span>
+                    </div>
+                </div>
+                <div class="skill-group" data-animate="fade-up" data-delay="5">
+                    <h3>Coursework</h3>
+                    <div class="tags">
+                        <span class="tag tag-2">Data Structures &amp; Algorithms</span>
+                        <span class="tag tag-2">Design Patterns</span>
+                        <span class="tag tag-2">Distributed Systems</span>
+                        <span class="tag tag-2">Operating Systems</span>
+                        <span class="tag tag-2">Computer Networks</span>
+                        <span class="tag tag-2">Machine Learning</span>
+                        <span class="tag tag-2">Software Architecture</span>
+                        <span class="tag tag-2">Scalable Data Analytics</span>
+                        <span class="tag tag-2">Performance Modeling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Projects ─── -->
+    <section id="projects">
+        <div class="section-inner">
+            <span class="section-label" data-animate="fade-up">Projects</span>
+            <h2 class="section-title"   data-animate="fade-up" data-delay="1">What I've Built</h2>
+            <div class="projects-grid">
+
+                <div class="project-card" data-animate="fade-up" data-delay="1">
+                    <div class="project-img-wrap">
+                        <img src="./assets/capstone.png" alt="Financial Analysis Pipeline" class="project-img">
+                        <div class="project-overlay">
+                            <p>End-to-end ML pipeline using LightGBM for financial signal modeling, with a live React dashboard fed by real-time market data via IBKR TWS API.</p>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Automated Financial Analysis Pipeline</h3>
+                        <div class="project-tags">
+                            <span class="ptag">Python</span>
+                            <span class="ptag">LightGBM</span>
+                            <span class="ptag">React</span>
+                            <span class="ptag">SQL</span>
+                            <span class="ptag">REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn btn-xs btn-primary" onclick="location.href='https://code2capital.netlify.app/'">Preview</button>
+                            <button class="btn btn-xs btn-ghost"   onclick="location.href='https://youtu.be/9EfRERMGCt4'">Walkthrough</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Replace ./assets/roadreview.png with your screenshot when ready -->
+                <div class="project-card" data-animate="fade-up" data-delay="2">
+                    <div class="project-img-wrap">
+                        <img src="./assets/roadreview.png" alt="RoadReview" class="project-img">
+                        <div class="project-overlay">
+                            <p>A web app for reviewing and rating roads and driving conditions, letting users share road quality insights and navigate smarter.</p>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>RoadReview</h3>
+                        <div class="project-tags">
+                            <span class="ptag">JavaScript</span>
+                            <span class="ptag">CSS</span>
+                            <span class="ptag">PostgreSQL</span>
+                            <span class="ptag">Shell</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn btn-xs btn-primary" onclick="location.href='https://youtu.be/ney5-ebHBJk'">Demo</button>
+                            <button class="btn btn-xs btn-ghost" onclick="location.href='https://csgit.ucalgary.ca/rodmichael.umapas/seng513-202601-pg-25'">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-animate="fade-up" data-delay="3">
+                    <div class="project-img-wrap">
+                        <img src="./assets/BBB.png" alt="Sports Betting Simulation" class="project-img">
+                        <div class="project-overlay">
+                            <p>Full-stack sports betting simulation with real-time odds, user accounts, and leaderboards.</p>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Sports Betting Simulation</h3>
+                        <div class="project-tags">
+                            <span class="ptag">React</span>
+                            <span class="ptag">Node.js</span>
+                            <span class="ptag">REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn btn-xs btn-primary" onclick="location.href='https://betbetbonanza.netlify.app'">Demo</button>
+                            <button class="btn btn-xs btn-ghost"   onclick="location.href='https://github.com/zpelkey03/betbetbonanza'">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-animate="fade-up" data-delay="4">
+                    <div class="project-img-wrap">
+                        <img src="./assets/flight.png" alt="Flight Reservation App" class="project-img">
+                        <div class="project-overlay">
+                            <p>Flight reservation system with booking, seat selection, and admin management features.</p>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Flight Reservation App</h3>
+                        <div class="project-tags">
+                            <span class="ptag">Java</span>
+                            <span class="ptag">SQL</span>
+                            <span class="ptag">OOP</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn btn-xs btn-primary" onclick="location.href='https://youtu.be/oa6mXv2vdnw?si=Qs3NsSgx9z3xkFos'">Demo</button>
+                            <button class="btn btn-xs btn-ghost"   onclick="location.href='https://github.com/syrilj/Flight_Reservation_App?tab=readme-ov-file'">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-animate="fade-up" data-delay="5">
+                    <div class="project-img-wrap">
+                        <img src="./assets/notes.png" alt="Notes App" class="project-img">
+                        <div class="project-overlay">
+                            <p>Notion-inspired note-taking app with rich text editing and cloud sync.</p>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>React Note Taking App</h3>
+                        <div class="project-tags">
+                            <span class="ptag">React</span>
+                            <span class="ptag">JavaScript</span>
+                            <span class="ptag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn btn-xs btn-primary" onclick="location.href='https://astonishing-mermaid-aa6898.netlify.app'">Demo</button>
+                            <button class="btn btn-xs btn-ghost"   onclick="location.href='https://github.com/RodmichaelU/lotion-1'">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-animate="fade-up" data-delay="6">
+                    <div class="project-img-wrap">
+                        <img src="./assets/credentials.png" alt="Student Credentials" class="project-img">
+                        <div class="project-overlay">
+                            <p>Blockchain-based credential verification system for student academic records.</p>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Student Credentials System</h3>
+                        <div class="project-tags">
+                            <span class="ptag">Python</span>
+                            <span class="ptag">Blockchain</span>
+                            <span class="ptag">Web3</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn btn-xs btn-primary" onclick="location.href='https://www.youtube.com/watch?v=AeSkhNEmCsU'">Demo</button>
+                            <button class="btn btn-xs btn-ghost"   onclick="location.href='https://github.com/CaelanX/hack-the-change-2022'">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Contact ─── -->
+    <section id="contact">
+        <div class="section-inner contact-inner">
+            <span class="section-label" data-animate="fade-up">Contact</span>
+            <h2 class="section-title"   data-animate="fade-up" data-delay="1">Get In Touch</h2>
+            <p class="contact-copy"     data-animate="fade-up" data-delay="2">
+                I'm a new grad actively looking for full-time software engineering roles.
+                Whether you have an opportunity, a question, or just want to connect, my inbox is always open.
+            </p>
+            <div class="contact-links" data-animate="fade-up" data-delay="3">
+                <a href="mailto:rodmichael.umapas@ucalgary.ca" class="contact-link">
+                    <img src="./assets/email.png"    alt="Email"    class="contact-icon">
+                    <span>rodmichael.umapas@ucalgary.ca</span>
+                </a>
+                <a href="https://www.linkedin.com/in/rodmichael-umapas/" target="_blank" class="contact-link">
+                    <img src="./assets/linkedin.png" alt="LinkedIn" class="contact-icon">
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-copy">&copy; 2026 Rodmichael Umapas · Built with HTML, CSS &amp; JS</p>
+        <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
