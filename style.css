@@ -401,7 +401,7 @@ section:not(#hero) {
 /* ========================
    Scroll Animations
    Add data-animate="fade-up|fade-left|fade-right|scale|fade" to any element.
-   Add data-delay="1"–"6" (multiples of 0.1s) to stagger siblings.
+   Add data-delay="1"–"8" (multiples of 0.1s) to stagger siblings.
    ======================== */
 [data-animate] {
     opacity: 0;
@@ -426,6 +426,8 @@ section:not(#hero) {
 [data-delay="4"] { transition-delay: 0.4s; }
 [data-delay="5"] { transition-delay: 0.5s; }
 [data-delay="6"] { transition-delay: 0.6s; }
+[data-delay="7"] { transition-delay: 0.7s; }
+[data-delay="8"] { transition-delay: 0.8s; }
 
 @media (prefers-reduced-motion: reduce) {
     [data-animate] { transition: none; opacity: 1; transform: none; }
