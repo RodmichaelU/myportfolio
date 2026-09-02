@@ -7,7 +7,7 @@ function toggleMenu() {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Scroll animations — watches any element with data-animate="…"
+    // Scroll animations: watches any element with data-animate="…"
     // To animate new content: add data-animate="fade-up|fade-left|fade-right|scale|fade"
     // To stagger siblings:    add data-delay="1"–"6"
     const observer = new IntersectionObserver(
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Software Engineer",
         "New Graduate · UofC",
         "Full Stack Developer",
-        "Open to Full-Time Roles"
+        "Open to Full-Time SWE Roles"
     ];
     let pi = 0, ci = 0, del = false;
     const el = document.getElementById("typed-text");

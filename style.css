@@ -330,7 +330,7 @@ ul  { list-style: none; }
     transition: opacity 0.2s, transform 0.2s;
 }
 
-/* LinkedIn icon has white padding baked in — scale up to crop it out */
+/* LinkedIn icon has white padding baked in, scale up to crop it out */
 .hero-socials a:nth-child(1) img {
     transform: scale(1.35);
 }
@@ -413,7 +413,7 @@ section:not(#hero) {
 [data-animate="fade-left"]  { transform: translateX(28px); }
 [data-animate="fade-right"] { transform: translateX(-28px); }
 [data-animate="scale"]      { transform: scale(0.93); }
-/* [data-animate="fade"] uses opacity only — no transform needed */
+/* [data-animate="fade"] uses opacity only, no transform needed */
 
 [data-animate].in-view {
     opacity: 1;
