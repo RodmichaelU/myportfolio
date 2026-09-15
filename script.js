@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "Software Engineer",
         "New Graduate · UofC",
         "Full Stack Developer",
-        "Open to Full-Time SWE Roles"
+        "Open to Full-Time SWE Roles",
+        "Incoming OMSCS Student · Georgia Tech"
     ];
     let pi = 0, ci = 0, del = false;
     const el = document.getElementById("typed-text");
