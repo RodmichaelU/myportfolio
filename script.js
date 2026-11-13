@@ -49,6 +49,50 @@ document.addEventListener("DOMContentLoaded", function () {
 
     type();
 
+    // Phone skills tabs: one category visible at a time (CSS shows all on desktop)
+    const skillsGrid = document.querySelector(".skills-grid");
+    if (skillsGrid) {
+        const groups = [...skillsGrid.querySelectorAll(".skill-group")];
+        const tabs = document.createElement("div");
+        tabs.className = "skill-tabs";
+        tabs.setAttribute("role", "tablist");
+        const show = (i) => {
+            groups.forEach((g, j) => {
+                g.classList.toggle("active", j === i);
+                if (j === i) g.classList.add("in-view");
+            });
+            [...tabs.children].forEach((b, j) => b.setAttribute("aria-selected", j === i));
+        };
+        groups.forEach((g, i) => {
+            const b = document.createElement("button");
+            b.type = "button";
+            b.setAttribute("role", "tab");
+            b.textContent = g.dataset.short || g.querySelector("h3").textContent;
+            b.addEventListener("click", () => show(i));
+            tabs.appendChild(b);
+        });
+        skillsGrid.before(tabs);
+        show(0);
+    }
+
+    // Phone project carousel: "n / total" counter + dots
+    const grid  = document.querySelector(".projects-grid");
+    const cards = grid ? [...grid.querySelectorAll(".project-card")] : [];
+    const count = document.querySelector(".swipe-count");
+    const dots  = document.querySelector(".swipe-dots");
+    if (grid && count && dots && cards.length) {
+        cards.forEach(() => dots.appendChild(document.createElement("span")));
+        const setActive = () => {
+            const step = cards[1] ? cards[1].offsetLeft - cards[0].offsetLeft : 1;
+            const atEnd = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 4;
+            const i = atEnd ? cards.length - 1 : Math.round(grid.scrollLeft / step);
+            count.textContent = `${i + 1} / ${cards.length}`;
+            [...dots.children].forEach((d, j) => d.classList.toggle("active", j === i));
+        };
+        grid.addEventListener("scroll", setActive, { passive: true });
+        setActive();
+    }
+
     // Click burst effect
     document.addEventListener("click", (e) => {
         if (e.target.closest("a, button, input, textarea, select")) return;
